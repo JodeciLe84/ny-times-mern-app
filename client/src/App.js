@@ -1,19 +1,27 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
+import React, { Component, Fragment } from "react";
 import "./App.css";
+import Search from './Components/Search'
+import Results from './Components/Results'
+import Saved from './Components/Saved'
 
 class App extends Component {
   render() {
+
+    // state {
+
+    // }
+
+
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <Fragment >
+        <div className='container'>
+
+          <Search />
+          <Results />
+          <Saved />
+
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </Fragment>
     );
   }
 }
